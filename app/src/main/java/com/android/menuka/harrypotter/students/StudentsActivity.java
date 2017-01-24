@@ -1,4 +1,4 @@
-package com.android.menuka.harrypotter;
+package com.android.menuka.harrypotter.students;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -6,30 +6,17 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import java.util.ArrayList;
+import com.android.menuka.harrypotter.R;
 
-public class HousesActivity extends AppCompatActivity {
-    private ListView housesListView;
+public class StudentsActivity extends AppCompatActivity {
+    private ListView studentsListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_houses);
-
-        housesListView = (ListView) findViewById(R.id.housesListView);
-
-        ArrayList<String> houses = new ArrayList<>();
-        houses.add("Gryffindor");
-        houses.add("Ravenclaw");
-        houses.add("Hufflepuff");
-        houses.add("Slytherin");
-
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, houses);
-        housesListView.setAdapter(arrayAdapter);
-
+        setContentView(R.layout.activity_students);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

@@ -8,6 +8,7 @@ public class Student {
     private String firstName;
     private String lastName;
     private House house;
+    private int houseId;
     private int age;
 
     public Student(String firstName, String lastName){
@@ -31,17 +32,22 @@ public class Student {
         this.lastName = lastName;
     }
 
-    public House getHouse() {
-        return house;
+    public int getHouseId() {
+        return houseId;
     }
 
-    public void setHouse(House house) {
-        this.house = house;
+    public void setHouseId(int houseId) {
+        this.houseId = houseId;
     }
 
     public int getAge() {
         return age;
     }
+
+    public House getHouse() {
+        return house;
+    }
+
 
     public void setAge(int age) {
         this.age = age;

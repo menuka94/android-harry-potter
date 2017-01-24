@@ -1,4 +1,4 @@
-package com.android.menuka.harrypotter;
+package com.android.menuka.harrypotter.professors;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -8,13 +8,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ListView;
 
-public class StudentsActivity extends AppCompatActivity {
-    private ListView studentsListView;
+import com.android.menuka.harrypotter.R;
+
+public class ProfessorsActivity extends AppCompatActivity {
+    private ListView professorsListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_students);
+        setContentView(R.layout.activity_professors);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

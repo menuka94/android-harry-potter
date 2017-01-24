@@ -8,6 +8,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.android.menuka.harrypotter.houses.HousesActivity;
+import com.android.menuka.harrypotter.magical_creatures.MagicalCreaturesActivity;
+import com.android.menuka.harrypotter.professors.ProfessorsActivity;
+import com.android.menuka.harrypotter.students.StudentsActivity;
+import com.android.menuka.harrypotter.subjects.SubjectsActivity;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {

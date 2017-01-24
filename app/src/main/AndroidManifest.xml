@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HousesActivity"
+            android:name=".houses.HousesActivity"
             android:label="@string/title_activity_houses"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -25,7 +25,7 @@
                 android:value="com.android.menuka.harrypotter.MainActivity" />
         </activity>
         <activity
-            android:name=".StudentsActivity"
+            android:name=".students.StudentsActivity"
             android:label="@string/title_activity_students"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -34,7 +34,7 @@
                 android:value="com.android.menuka.harrypotter.MainActivity" />
         </activity>
         <activity
-            android:name=".ProfessorsActivity"
+            android:name=".professors.ProfessorsActivity"
             android:label="@string/title_activity_professors"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -43,7 +43,7 @@
                 android:value="com.android.menuka.harrypotter.MainActivity" />
         </activity>
         <activity
-            android:name=".SubjectsActivity"
+            android:name=".subjects.SubjectsActivity"
             android:label="@string/title_activity_subjects"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -52,7 +52,7 @@
                 android:value="com.android.menuka.harrypotter.MainActivity" />
         </activity>
         <activity
-            android:name=".MagicalCreaturesActivity"
+            android:name=".magical_creatures.MagicalCreaturesActivity"
             android:label="@string/title_activity_magical_creatures"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
