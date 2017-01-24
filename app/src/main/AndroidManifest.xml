@@ -15,6 +15,51 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Houses"
+            android:label="@string/title_activity_houses"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.menuka.harrypotter.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Students"
+            android:label="@string/title_activity_students"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.menuka.harrypotter.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Professors"
+            android:label="@string/title_activity_professors"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.menuka.harrypotter.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Subjects"
+            android:label="@string/title_activity_subjects"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.menuka.harrypotter.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MagicalCreatures"
+            android:label="@string/title_activity_magical_creatures"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.menuka.harrypotter.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

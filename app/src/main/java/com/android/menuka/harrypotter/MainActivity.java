@@ -1,5 +1,6 @@
 package com.android.menuka.harrypotter;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,6 +35,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 System.out.println("Tapped: " + categories.get(position));
+
+                if(position == categories.indexOf("Houses")){
+                    Intent i = new Intent(getApplicationContext(), Houses.class);
+                    startActivity(i);
+                }else if(position == categories.indexOf("Students")){
+                    Intent i = new Intent(getApplicationContext(), Students.class);
+                    startActivity(i);
+                }else if(position == categories.indexOf("Subjects")){
+                    Intent i = new Intent(getApplicationContext(), Subjects.class);
+                    startActivity(i);
+                }else if(position == categories.indexOf("Magical Creatures")){
+                    Intent i = new Intent(getApplicationContext(), MagicalCreatures.class);
+                    startActivity(i);
+                }else if(position == categories.indexOf("Professors")){
+                    Intent i = new Intent(getApplicationContext(), Professors.class);
+                    startActivity(i);
+                }
             }
         });
     }

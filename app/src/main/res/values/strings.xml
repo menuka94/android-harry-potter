@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Harry Potter</string>
+    <string name="title_activity_houses">Houses</string>
+    <string name="title_activity_students">Students</string>
+    <string name="title_activity_professors">Professors</string>
+    <string name="title_activity_subjects">Subjects</string>
+    <string name="title_activity_magical_creatures">Magical Creatures</string>
 </resources>
