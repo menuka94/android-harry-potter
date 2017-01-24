@@ -22,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
 
         categories = new ArrayList<>();
 
-        categories.add("Students");
-        categories.add("Professors");
-        categories.add("Houses");
+        categories.add("StudentsActivity");
+        categories.add("ProfessorsActivity");
+        categories.add("HousesActivity");
         categories.add("Magical Creatures");
-        categories.add("Subjects");
+        categories.add("SubjectsActivity");
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, categories);
         categoriesListView.setAdapter(arrayAdapter);
@@ -36,20 +36,20 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 System.out.println("Tapped: " + categories.get(position));
 
-                if(position == categories.indexOf("Houses")){
-                    Intent i = new Intent(getApplicationContext(), Houses.class);
+                if(position == categories.indexOf("HousesActivity")){
+                    Intent i = new Intent(getApplicationContext(), HousesActivity.class);
                     startActivity(i);
-                }else if(position == categories.indexOf("Students")){
-                    Intent i = new Intent(getApplicationContext(), Students.class);
+                }else if(position == categories.indexOf("StudentsActivity")){
+                    Intent i = new Intent(getApplicationContext(), StudentsActivity.class);
                     startActivity(i);
-                }else if(position == categories.indexOf("Subjects")){
-                    Intent i = new Intent(getApplicationContext(), Subjects.class);
+                }else if(position == categories.indexOf("SubjectsActivity")){
+                    Intent i = new Intent(getApplicationContext(), SubjectsActivity.class);
                     startActivity(i);
                 }else if(position == categories.indexOf("Magical Creatures")){
-                    Intent i = new Intent(getApplicationContext(), MagicalCreatures.class);
+                    Intent i = new Intent(getApplicationContext(), MagicalCreaturesActivity.class);
                     startActivity(i);
-                }else if(position == categories.indexOf("Professors")){
-                    Intent i = new Intent(getApplicationContext(), Professors.class);
+                }else if(position == categories.indexOf("ProfessorsActivity")){
+                    Intent i = new Intent(getApplicationContext(), ProfessorsActivity.class);
                     startActivity(i);
                 }
             }

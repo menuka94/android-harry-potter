@@ -8,13 +8,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ListView;
 
-public class Professors extends AppCompatActivity {
-    private ListView professorsListView;
+public class SubjectsActivity extends AppCompatActivity {
+    private ListView subjectsListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_professors);
+        setContentView(R.layout.activity_subjects);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
