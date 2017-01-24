@@ -23,7 +23,7 @@
 
     <include layout="@layout/content_houses"
         android:layout_height="494dp"
-        android:id="@+id/housesListView" />
+        android:id="@+id/relativeLayout" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

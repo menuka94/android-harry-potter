@@ -15,7 +15,10 @@
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/housesListView" />
+        android:id="@+id/housesListView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="81dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="220dp" />
 </RelativeLayout>

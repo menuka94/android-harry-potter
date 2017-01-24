@@ -19,7 +19,7 @@ public class HousesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_houses);
 
-        housesListView = (ListView) findViewById(R.id.housesListView) ;
+        housesListView = (ListView) findViewById(R.id.housesListView);
 
         ArrayList<String> houses = new ArrayList<>();
         houses.add("Gryffindor");
