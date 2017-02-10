@@ -6,12 +6,17 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.android.menuka.harrypotter.R;
+import com.android.menuka.harrypotter.models.Professor;
+
+import java.util.ArrayList;
 
 public class ProfessorsActivity extends AppCompatActivity {
     private ListView professorsListView;
+    private ArrayList<Professor> professors;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +24,15 @@ public class ProfessorsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_professors);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        professorsListView = (ListView)findViewById(R.id.professorsListView);
+        professors = new ArrayList<>();
+
+        professors.add(new Professor("Albus", "Dumbledore"));
+        professors.add(new Professor("Minerva", "McGonagall"));
+        professors.add(new Professor("Severus", "Snape"));
+        professors.add(new Professor("Remus", "Lupin"));
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

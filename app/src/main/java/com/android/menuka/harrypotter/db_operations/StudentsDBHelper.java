@@ -37,7 +37,12 @@ public class StudentsDBHelper {
     }
 
     public static void getAllStudents(){
+        try{
+            String query = "select * from students";
 
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     public static void removeStudent(int id){
