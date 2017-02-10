@@ -24,7 +24,7 @@ public class StudentsActivity extends AppCompatActivity {
     private ArrayList<Student> studentsList;
     private DatabaseReference databaseReference;
 
-    private void addStudent(String firstName, String lastName, int houseId){
+    private void addStudent(String firstName, String lastName, Long houseId){
         Student student = new Student(firstName, lastName);
         student.setHouse_id(houseId);
         databaseReference.child("students").setValue(student);
@@ -60,11 +60,7 @@ public class StudentsActivity extends AppCompatActivity {
         ChildEventListener childEventListener = new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                Student student = dataSnapshot.getValue(Student.class);
-                studentsList.add(student);
-                studentAdapter.notifyDataSetChanged();
-
-                System.out.println("New Student: " + student);
+                System.out.println(dataSnapshot.getValue(Student.class).toString());
             }
 
             @Override

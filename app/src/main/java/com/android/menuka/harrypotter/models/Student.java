@@ -10,12 +10,16 @@ import com.google.firebase.database.IgnoreExtraProperties;
 public class Student {
     private String first_name;
     private String last_name;
-    private House house;
-    private int house_id;
-    private int age;
+    private Long house_id;
 
     public Student() {
 
+    }
+
+    public Student(String first_name, String last_name, Long house_id) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.house_id = house_id;
     }
 
     public Student(String first_name, String lastName){
@@ -28,9 +32,7 @@ public class Student {
         return "Student{" +
                 "first_name='" + first_name + '\'' +
                 ", last_name='" + last_name + '\'' +
-                ", house=" + house +
                 ", house_id=" + house_id +
-                ", age=" + age +
                 '}';
     }
 
@@ -38,36 +40,19 @@ public class Student {
         return first_name;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
-    }
 
     public String getLastName() {
         return last_name;
     }
 
-    public void setLastName(String lastName) {
-        this.last_name = lastName;
-    }
 
-    public int getHouse_id() {
+    public Long getHouse_id() {
         return house_id;
     }
 
-    public void setHouse_id(int house_id) {
+    public void setHouse_id(Long house_id) {
         this.house_id = house_id;
     }
 
-    public int getAge() {
-        return age;
-    }
 
-    public House getHouse() {
-        return house;
-    }
-
-
-    public void setAge(int age) {
-        this.age = age;
-    }
 }
