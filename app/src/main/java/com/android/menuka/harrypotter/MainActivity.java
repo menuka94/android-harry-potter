@@ -10,15 +10,41 @@ import android.widget.ListView;
 
 import com.android.menuka.harrypotter.houses.HousesActivity;
 import com.android.menuka.harrypotter.magical_creatures.MagicalCreaturesActivity;
+import com.android.menuka.harrypotter.models.Student;
 import com.android.menuka.harrypotter.professors.ProfessorsActivity;
 import com.android.menuka.harrypotter.students.StudentsActivity;
 import com.android.menuka.harrypotter.subjects.SubjectsActivity;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private ArrayList<String> categories;
     private ListView categoriesListView;
+    private FirebaseApp app;
+    private FirebaseStorage storage;
+    private FirebaseAuth auth;
+    private FirebaseDatabase database;
+
+    private DatabaseReference databaseRef;
+    private StorageReference storageRef;
+
+    private void initFirebase(){
+        app = FirebaseApp.getInstance();
+        database = FirebaseDatabase.getInstance(app);
+        auth = FirebaseAuth.getInstance(app);
+        storage = FirebaseStorage.getInstance(app);
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

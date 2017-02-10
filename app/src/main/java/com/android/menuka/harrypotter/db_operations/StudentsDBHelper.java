@@ -1,6 +1,5 @@
 package com.android.menuka.harrypotter.db_operations;
 
-import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
 
@@ -24,10 +23,10 @@ public class StudentsDBHelper {
             String query = "insert into students (first_name, last_name, age, house_id) values (?,?,?,?)";
             SQLiteStatement statement = db.compileStatement(query);
 
-            statement.bindString(1, student.getFirstName());
+            statement.bindString(1, student.getFirst_name());
             statement.bindString(2, student.getLastName());
             statement.bindString(3, Integer.toString(student.getAge()));
-            statement.bindString(4, Integer.toString(student.getHouseId()));
+            statement.bindString(4, Integer.toString(student.getHouse_id()));
 
             statement.execute();
         }catch (Exception e){
